@@ -13,8 +13,8 @@ export const SimpleFlightBookingStore = signalStore(
   withCallState(),
   withEntities<Flight>(),
   withDataService({
-    dataServiceType: FlightService, 
-    filter: { from: 'Paris', to: 'New York' },
+    dataServiceType: FlightService,
+    filter: { from: 'Graz', to: 'Hamburg' }, // TODO revert to original { from: 'Paris', to: 'New York' },
   }),
   withUndoRedo(),
 );

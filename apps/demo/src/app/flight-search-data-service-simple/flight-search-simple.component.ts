@@ -44,6 +44,10 @@ export class FlightSearchSimpleComponent {
   canUndo = this.store.canUndo;
   canRedo = this.store.canRedo;
 
+  ngOnInit() {
+    this.store.load()
+  }
+
   async search() {
     this.store.load();
   }
